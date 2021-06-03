@@ -1,0 +1,31 @@
+{% extends "base.html" %}{% block title %}login{% endblock %}
+{% block content%}
+<form method="POST">
+	<h3 align="center">Graph</h3>
+	<div class="frm-group">
+		<label for="email">Company name</label>
+		<input type="text" name="cname" class="form-control" id="cname" placeholder="Enter your Company name" 
+		>
+
+	</div>
+	<div class="frm-group">
+		<label for="firstname">Starting Date in yyyy-mm-dd</label>
+		<input type="date" name="start" class="form-control" id="start" placeholder="Starting Date in yyyy-mm-dd" 
+		>
+
+	</div>
+	<div class="frm-group">
+		<label for="password1">ending date</label>
+		<input type="date" name="end" class="form-control" id="end" placeholder="Ending date" 
+		>
+
+	</div>
+	
+	<br>
+	<button type="submit" class="btn btn-dark">Submit</button>
+
+
+
+
+</form>
+{% endblock %}
